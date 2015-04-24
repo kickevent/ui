@@ -6566,7 +6566,8 @@ button.close {
   color: #b47eca;
   border-color: #c9a2d9;
 }
-.btn-primary:hover {
+.btn-primary:hover,
+.btn-primary:focus {
   color: #8542a0;
   border-color: #8542a0;
   background: #FFF;
@@ -6576,7 +6577,8 @@ button.close {
   color: #FFF;
   border-color: #763b8e;
 }
-.btn-primary-full:hover {
+.btn-primary-full:hover,
+.btn-primary-full:focus {
   color: #FFF;
   background: #763b8e;
   border-color: #763b8e;
@@ -6586,7 +6588,8 @@ button.close {
   color: #9d9d9d;
   border-color: #b7b7b7;
 }
-.btn-default:hover {
+.btn-default:hover,
+.btn-default:focus {
   color: #6a6a6a;
   border-color: #6a6a6a;
   background: #FFF;
@@ -6596,7 +6599,8 @@ button.close {
   color: #FFF;
   border-color: #5e5e5e;
 }
-.btn-default-full:hover {
+.btn-default-full:hover,
+.btn-default-full:focus {
   color: #FFF;
   background: #5e5e5e;
   border-color: #5e5e5e;
@@ -6784,7 +6788,8 @@ body {
   line-height: 1.3333333;
   border-radius: 2px;
 }
-.slogan .btn:hover {
+.slogan .btn:hover,
+.slogan .btn:focus {
   color: #FFF;
   background: #763b8e;
   border-color: #763b8e;
