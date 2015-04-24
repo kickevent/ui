@@ -1,4 +1,5 @@
-angular.module('kickevent.ui.demo', ['ngRoute']);
+angular.module('kickevent.ui.demo.templates', []);
+angular.module('kickevent.ui.demo', ['ngRoute', 'kickevent.ui.demo.templates']);
 
 angular.module('kickevent.ui.demo').config(function($routeProvider) {
   $routeProvider
