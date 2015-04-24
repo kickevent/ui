@@ -1,0 +1,22 @@
+{
+  "name": "kickevent-ui",
+  "version": "1.0.0",
+  "description": "UI for KickEvent",
+  "main": "src/less/main.less",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:kickevent/ui.git"
+  },
+  "keywords": [
+    "UI",
+    "Less"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kickevent/ui/issues"
+  },
+  "homepage": "https://github.com/kickevent/ui",
+  "dependencies": {
+    "bootstrap": "^3.3.4"
+  }
+}

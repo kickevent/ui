@@ -1,0 +1,37 @@
+.btn-empty-color(@color) {
+  background: #FFF;
+  color: lighten(@color, 20%);
+  border-color: lighten(@color, 30%);
+  &:hover {
+    color: @color;
+    border-color: @color;
+    background: #FFF;
+  }
+}
+
+.btn-full-color(@color) {
+  background: @color;
+  color: #FFF;
+  border-color: darken(@color, 5%);
+  &:hover {
+    color: #FFF;
+    background: darken(@color, 5%);
+    border-color: darken(@color, 5%);
+  }
+}
+
+.btn-primary {
+  .btn-empty-color(@theme-color-one);
+}
+
+.btn-primary-full {
+  .btn-full-color(@theme-color-one);
+}
+
+.btn-default {
+  .btn-empty-color(darken(@text-color, 5%));
+}
+
+.btn-default-full {
+  .btn-full-color(darken(@text-color, 5%));
+}
