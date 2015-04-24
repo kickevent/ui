@@ -1,0 +1,62 @@
+body {
+  font-weight: 300;
+}
+
+.application-header {
+  border-bottom: 1px solid lighten(@theme-color-one, 40%);
+  height: 75px;
+
+  .content {
+    padding: 20px;
+  }
+}
+
+.sub-header {
+  background: lighten(@theme-color-two, 30%);
+  border-bottom: 1px solid lighten(@theme-color-one, 40%);
+}
+
+.main {
+  display: flex;
+  flex-direction: row;
+
+  .sidebar {
+    width: @sidebar-width;
+    border-left: 0;
+  }
+
+
+  .content {
+    flex: 1 auto;
+  }
+}
+
+.slogan {
+  font-size: 30px;
+  font-weight: 100;
+  text-align: center;
+  padding: 25px 0;
+  color: @theme-color-one;
+  strong {
+    font-weight: 400;
+  }
+
+  .btn {
+    .btn-full-color(@theme-color-one);
+     margin-left: 20px;
+    .btn-lg;
+  }
+}
+
+#main-menu {
+  position: absolute;
+  left: @sidebar-width;
+  top: 5px;
+  .inline-menu(@theme-color-one, lighten(@theme-color-one, 40%), 68px);
+  font-size: 0.95em;
+}
+
+#main-logo {
+  padding: 20px;
+}
+

@@ -1,0 +1,85 @@
+.inline-menu(@color, @border-color, @line-height) {
+  ul {
+    display: inline-block;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    border-bottom: 1px solid @border-color;
+    line-height: @line-height;
+
+    li {
+      display: inline-block;
+      margin-right: 10px;
+      margin-bottom: -1px;
+      a {
+        display: inline-block;
+        color: lighten(@headings-color, 30%);
+        text-transform: uppercase;
+        font-weight: 300;
+
+        &:hover, &:focus {
+          color: @color;
+          text-decoration: none;
+        }
+      }
+
+      &.active a {
+        border-bottom: 2px solid @color;
+        color: @color;
+        font-weight: 400;
+      }
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+.vertical-right-menu(@color, @border-color) {
+  ul {
+    list-style: none;
+    border-right: 1px solid @border-color;
+
+    li {
+      display: block;
+      margin-bottom: 12px;
+      margin-right: -1px;
+      text-align: right;
+      a {
+        display: block;
+        color: lighten(@headings-color, 30%);
+        text-transform: uppercase;
+        font-weight: 300;
+        padding-right: 20px;
+
+        &:hover, &:focus {
+          color: @color;
+          text-decoration: none;
+        }
+      }
+
+      &.active a {
+        padding-right: 18px;
+        border-right: 2px solid @color;
+        color: @color;
+        font-weight: 400;
+      }
+    }
+  }
+}
+
+.sidebar-menu {
+  .vertical-right-menu(@headings-color, #EEE);
+  font-size: 0.85em;
+}
+
+.menu-horizontal-default {
+  .inline-menu(@headings-color, #EEE, 35px);
+  font-size: 0.85em;
+}
+
+.menu-vertical-default {
+  .vertical-right-menu(@headings-color, #EEE);
+  font-size: 0.85em;
+}
