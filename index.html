@@ -11,7 +11,7 @@
     <body>
         <header class="application-header">
             <a id="main-logo" class="logo" ng-href="#/">Kick<span>Event</span></a>
-            <nav id="main-menu">
+            <nav id="main-menu" class="pad-left">
                 <ul>
                     <li class="active"><a href="">CSS</a></li>
                 </ul>
@@ -30,12 +30,14 @@
             </div>
         </section>
         <section class="main pad-top">
-            <section class="sidebar pad">
+            <section class="sidebar pad-top">
                 <nav class="sidebar-menu pad-right" ng-controller="MenuController as ctrl">
                     <ul>
                         <li ng-class="{ active: ctrl.isActive('headings') }"><a ng-href="#/headings">Headings</a></li>
                         <li ng-class="{ active: ctrl.isActive('buttons') }"><a ng-href="#/buttons">Buttons</a></li>
                         <li ng-class="{ active: ctrl.isActive('menus') }"><a ng-href="#/menus">Menus</a></li>
+                        <li ng-class="{ active: ctrl.isActive('tables') }"><a ng-href="#/tables">Tables</a></li>
+                        <li ng-class="{ active: ctrl.isActive('forms') }"><a ng-href="#/forms">Forms</a></li>
                     </ul>
                 </nav>
             </section>
