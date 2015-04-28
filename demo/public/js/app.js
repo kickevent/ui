@@ -19,6 +19,14 @@ angular.module('kickevent.ui.demo').config(function($routeProvider) {
       templateUrl: 'menus.html'
     })
 
+    .when('/tables', {
+      templateUrl: 'tables.html'
+    })
+
+    .when('/forms', {
+      templateUrl: 'forms.html'
+    })
+
     .otherwise({
       redirectTo: '/'
     })
